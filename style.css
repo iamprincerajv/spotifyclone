@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+body {
+    background-color: darkslategrey;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.brand img {
+    width: 44px;
+    padding: 0 8px;
+}
+
+.container {
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Lora', serif;
+    display: flex;
+    width: 80%;
+    margin: 23px auto;
+    padding: 34px;
+    border-radius: 12px;
+    background-image: url("assets/images/bg1.jpg");
+}
+
+.songItemContainer {
+    margin-top: 50px;
+}
+
+.songItem {
+    height: 50px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0;
+    border-radius: 10px;
+}
+
+.songItem img {
+    width: 40px;
+    margin: 0 23px;
+    border-radius: 50%;
+}
+
+.timestamp {
+    margin: 0 23px; 
+}
+
+.timestamp i {
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.bottom {
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content : center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 14px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .icons i {
+    margin-right: 20px;
+} */
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Playfair Display', serif;
+}
+
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
