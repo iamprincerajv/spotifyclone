@@ -68,14 +68,16 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element) =>
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.src = `assets/audio/${songIndex + 1}.mp3`;
         audioElement.currentTime = 0;
-        if (audioElement.paused || audioElement.currentTime <= 0) {
+        if (audioElement.paused || audioElement.duration <=0) {
+            console.log(e.target, "p1")
             e.target.classList.remove("fa-play");
             e.target.classList.add('fa-pause');
             audioElement.play();
             masterPlay.classList.remove("fa-play");
             masterPlay.classList.add("fa-pause");
             gif.style.opacity = 1;
-        } else {
+        }else if(audioElement.played) {
+            console.log(e.target, "p2")
             e.target.classList.remove("fa-pause");
             e.target.classList.add('fa-play');
             audioElement.pause();
@@ -127,3 +129,13 @@ document.getElementById("previous").addEventListener('click', () => {
         gif.style.opacity = 0;
     }
 })
+
+const autoNext = () => {
+    if(audioElement.currentTime >= audioElement.duration) {
+        document.getElementById('next').click();
+    }
+};
+
+setInterval(()=>{
+    autoNext();
+}, 100);

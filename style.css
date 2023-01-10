@@ -12,6 +12,8 @@ body {
 
 nav {
     font-family: 'Playfair Display', serif;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
