@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Spotify</title>
+    <title>SpotifyC</title>
 </head>
 
 <body>
     <nav>
         <ul>
             <li class="brand"><img src="assets/images/logo.png" alt="Spotify"> Spotify</li>
-            <li>Home</li>
-            <li>About</li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about.html">About</a></li>
         </ul>
     </nav>
 
@@ -24,70 +24,72 @@
             <div class="songItemContainer">
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="0"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="0"></i></span>
                 </div>
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="1"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="1"></i></span>
                 </div>
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="2"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="2"></i></span>
                 </div>
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="3"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="3"></i></span>
                 </div>
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="4"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="4"></i></span>
                 </div>
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="5"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="5"></i></span>
                 </div>
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="6"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="6"></i></span>
                 </div>
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="7"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="7"></i></span>
                 </div>
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="8"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="8"></i></span>
                 </div>
                 <div class="songItem">
                     <img>
-                    <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timestamp">05:34 <i
-                                class="fa-solid songItemPlay fa-play" id="9"></i></span></span>
+                    <span class="songName"></span>
+                    <span class="songListPlay"><span class="timestamp"></span> <i
+                                class="fa-solid songItemPlay fa-play" id="9"></i></span>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="bottom">
+        <span id="currTime">00:00</span>
         <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+        <span id="totDuration">00:00</span>
         <div class="icons">
             <!-- font awesome icons -->
 
@@ -97,7 +99,7 @@
         </div>
 
         <div class="songInfo">
-            <span id="masterSongName">Song 1</span> <img src="assets/images/playing.gif" id="gif"
+            <span id="masterSongName">Kabhi Kabhi Aditi Zindagi</span> <img src="assets/images/playing.gif" id="gif"
                 width="42px" alt="">
         </div>
     </div>

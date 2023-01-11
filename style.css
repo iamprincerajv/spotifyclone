@@ -41,6 +41,11 @@ nav ul li {
     padding: 0 8px;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
 .container {
     height: 100%;
     background-color: black;
@@ -76,8 +81,12 @@ nav ul li {
     border-radius: 50%;
 }
 
+.songItem i {
+    margin-right: 20px;
+}
+
 .timestamp {
-    margin: 0 23px; 
+    margin: 0 10px; 
 }
 
 .timestamp i {
@@ -104,13 +113,27 @@ nav ul li {
     justify-content: space-between;
 }
 
-/* .icons i {
-    margin-right: 20px;
-} */
+.icons i {
+    cursor: pointer;
+}
 
 #myProgressBar {
     width: 80vw;
     cursor: pointer;
+}
+
+#currTime {
+    position: absolute;
+    left: 7vw;
+    bottom: 65px;
+    font-size: 16px;
+}
+
+#totDuration {
+    position: absolute;
+    right: 7vw;
+    bottom: 65px;
+    font-size: 16px;
 }
 
 .songInfo {
