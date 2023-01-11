@@ -2,10 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
 body {
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+
     background-color: darkslategrey;
 }
 
-*{
+body::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
+
+* {
     margin: 0;
     padding: 0;
 }
@@ -83,24 +93,20 @@ nav a {
 
 .songItem i {
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .timestamp {
-    margin: 0 10px; 
-}
-
-.timestamp i {
-    cursor: pointer;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .bottom {
     position: sticky;
     bottom: 0;
-    height: 100px;
+    height: 85px;
     background-color: black;
     display: flex;
-    justify-content : center;
+    justify-content: center;
     align-items: center;
     color: white;
     flex-direction: column;
@@ -120,6 +126,8 @@ nav a {
 #myProgressBar {
     width: 80vw;
     cursor: pointer;
+    position: absolute;
+    bottom: 65px;
 }
 
 #currTime {
@@ -138,11 +146,152 @@ nav a {
 
 .songInfo {
     position: absolute;
-    left: 10vw;
+    left: 7vw;
+    bottom: 25px;
     font-family: 'Playfair Display', serif;
 }
 
-.songInfo img {
-    opacity: 0;
-    transition: opacity 0.4s;
+/* Media Queries */
+
+@media screen and (max-width: 1350px) {
+    #currTime {
+        left: 6vw;
+    }
+
+    #totDuration {
+        right: 6vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #currTime {
+        left: 5vw;
+    }
+
+    #totDuration {
+        right: 5vw;
+    }
+
+    .icons {
+        position: absolute;
+        right: 7vw;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #currTime {
+        left: 4vw;
+    }
+
+    #totDuration {
+        right: 4vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #currTime {
+        left: 3vw;
+    }
+
+    #totDuration {
+        right: 3vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #currTime {
+        left: 2vw;
+    }
+
+    #totDuration {
+        right: 2vw;
+    }
+
+    .songInfo {
+        left: 5vw;
+        width: 50%;
+        min-width: 170px;
+        height: 25px;
+        overflow: hidden;
+    }
+
+    #masterSongName {
+        /* animation properties */
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+
+        -moz-animation: my-animation 15s linear infinite;
+        -webkit-animation: my-animation 15s linear infinite;
+        animation: my-animation 10s linear infinite;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    #currTime {
+        left: 0vw;
+        margin-left: 5px;
+    }
+
+    #totDuration {
+        right: 0vw;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #myProgressBar {
+        width: 90vw;
+        position: absolute;
+        bottom: 70px;
+    }
+
+    #currTime {
+        bottom: 55px;
+        left: 4vw;
+    }
+
+    #totDuration {
+        bottom: 55px;
+        right: 4vw;
+    }
+}
+
+/* Animations */
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
 }
