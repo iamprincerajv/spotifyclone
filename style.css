@@ -127,8 +127,73 @@ nav a {
     width: 80vw;
     cursor: pointer;
     position: absolute;
-    bottom: 65px;
+    bottom: 70px;
+
+    /* range bar styles */
+
+    /* for chrome */
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
 }
+
+                        /***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+#myProgressBar::-webkit-slider-runnable-track {
+    background: red;
+    height: 7px;
+    border-radius: 10px;
+  }
+  
+  /******** Firefox ********/
+  #myProgressBar::-moz-range-track {
+    background: red;
+    height: 7px;
+    border-radius: 10px;
+  }
+
+  /***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+#myProgressBar::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    margin-top: -5px; /* Centers thumb on the track */
+    background-color: red;
+    height: 17px;
+    width: 17px;
+    border-radius: 50%; 
+    border: 0.1px solid orangered;   
+ }
+
+/***** Firefox *****/
+#myProgressBar::-moz-range-thumb {
+    border: 0.1px solid orangered;
+    border-radius: 50%;
+    background-color: red;
+    height: 17px;
+    width: 17px;
+}
+
+/***** Focus Styles *****/
+/* Removes default focus */
+#myProgressBar:focus {
+    outline: none;
+  }
+  
+  /***** Chrome, Safari, Opera, and Edge Chromium *****/
+  #myProgressBar:focus::-webkit-slider-thumb {
+    border: 0.1px solid red;
+    outline: 0.8px solid red;
+    outline-offset: 0.15rem;
+  }
+  
+  /******** Firefox ********/
+  #myProgressBar:focus::-moz-range-thumb {
+    border: 0.1px solid red;
+    outline: 0.8px solid red;
+    outline-offset: 0.15rem;     
+  }
 
 #currTime {
     position: absolute;
@@ -243,8 +308,7 @@ nav a {
 @media screen and (max-width: 450px) {
     #myProgressBar {
         width: 90vw;
-        position: absolute;
-        bottom: 70px;
+        bottom: 75px;
     }
 
     #currTime {
