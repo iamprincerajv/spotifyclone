@@ -13,11 +13,11 @@ let songs = [
     { songName: "Kar Har Maidaan Fateh - Sanju", filePath: "assets/audio/3.mp3", coverPath: "assets/covers/3.jpg", durationTime: "05.11" },
     { songName: "Kalank - Kalank (2019)", filePath: "assets/audio/4.mp3", coverPath: "assets/covers/4.jpg", durationTime: "05.11" },
     { songName: "Qaafirana - Kedarnath (2018)", filePath: "assets/audio/5.mp3", coverPath: "assets/covers/5.jpg", durationTime: "05.41" },
-    { songName: "Duncan Laurence - Arcade ft. FLETCHER", filePath: "assets/audio/6.mp3", coverPath: "assets/covers/6.jpg", durationTime: "03.05" },
+    { songName: "Duncan Laurence - Arcade", filePath: "assets/audio/6.mp3", coverPath: "assets/covers/6.jpg", durationTime: "03.05" },
     { songName: "Ellie Goulding - Love Me Like You Do", filePath: "assets/audio/7.mp3", coverPath: "assets/covers/7.jpg", durationTime: "04.12" },
     { songName: "Fikar Not - Chhichhore", filePath: "assets/audio/8.mp3", coverPath: "assets/covers/8.jpg", durationTime: "03.09" },
     { songName: "Ishare Tere - Guru Randhawa", filePath: "assets/audio/9.mp3", coverPath: "assets/covers/9.jpg", durationTime: "03.09" },
-    { songName: "Ishq Mubarak - Tum Bin 2 (Arijit Singh)", filePath: "assets/audio/10.mp3", coverPath: "assets/covers/10.jpg", durationTime: "04.56" }
+    { songName: "Ishq Mubarak - Tum Bin 2", filePath: "assets/audio/10.mp3", coverPath: "assets/covers/10.jpg", durationTime: "04.56" }
 ];
 
 songItem.forEach((element, i) => {

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body {
     -ms-overflow-style: none;
@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 }
 
 nav {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lobster Two', cursive;
     position: sticky;
     top: 0;
 }
@@ -56,11 +56,20 @@ nav a {
     color: white;
 }
 
+#gif {
+    position: absolute;
+    top: 7px;
+    width: 50px;
+    right: 7px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
 .container {
     height: 100%;
     background-color: black;
     color: white;
-    font-family: 'Lora', serif;
+    font-family: 'Lobster', cursive;
     display: flex;
     width: 80%;
     margin: 23px auto;
@@ -213,7 +222,7 @@ nav a {
     position: absolute;
     left: 7vw;
     bottom: 25px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lobster Two', cursive;
 }
 
 /* Media Queries */
@@ -265,6 +274,23 @@ nav a {
 }
 
 @media screen and (max-width: 550px) {
+    .container {
+        padding: 20px;
+    }
+
+    .songNameCon {
+        width: 50%;
+    }
+
+    .songItem img {
+        margin: 0 10px;
+        width: 35px;
+    }
+
+    .timestamp {
+        font-size: 13px;
+    }
+
     #currTime {
         left: 2vw;
     }
@@ -294,6 +320,9 @@ nav a {
 }
 
 @media screen and (max-width: 475px) {
+    .songItemContainer {
+        margin-top: 20px;
+    }
     #currTime {
         left: 0vw;
         margin-left: 5px;
@@ -306,6 +335,19 @@ nav a {
 }
 
 @media screen and (max-width: 450px) {
+    .songItem img {
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+    
+    .songItem i {
+        margin-right: 15px;
+    }
+
+    .timestamp {
+        margin-left: 5px;
+    }
+
     #myProgressBar {
         width: 90vw;
         bottom: 75px;
