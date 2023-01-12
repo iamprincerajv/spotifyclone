@@ -354,12 +354,12 @@ nav a {
     }
 
     #currTime {
-        bottom: 55px;
+        bottom: 52px;
         left: 4vw;
     }
 
     #totDuration {
-        bottom: 55px;
+        bottom: 52px;
         right: 4vw;
     }
 }

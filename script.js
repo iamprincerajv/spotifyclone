@@ -8,16 +8,16 @@ let songItem = Array.from(document.getElementsByClassName("songItem"));
 let masterSongName = document.getElementById('masterSongName');
 
 let songs = [
-    { songName: "Kabhi Kabhi Aditi Zindagi", filePath: "assets/audio/1.mp3", coverPath: "assets/covers/1.jpg", durationTime: "03.41" },
-    { songName: "Akh Lad Jave - Loveratri", filePath: "assets/audio/2.mp3", coverPath: "assets/covers/2.jpg", durationTime: "03.00" },
-    { songName: "Kar Har Maidaan Fateh - Sanju", filePath: "assets/audio/3.mp3", coverPath: "assets/covers/3.jpg", durationTime: "05.11" },
-    { songName: "Kalank - Kalank (2019)", filePath: "assets/audio/4.mp3", coverPath: "assets/covers/4.jpg", durationTime: "05.11" },
-    { songName: "Qaafirana - Kedarnath (2018)", filePath: "assets/audio/5.mp3", coverPath: "assets/covers/5.jpg", durationTime: "05.41" },
-    { songName: "Duncan Laurence - Arcade", filePath: "assets/audio/6.mp3", coverPath: "assets/covers/6.jpg", durationTime: "03.05" },
-    { songName: "Ellie Goulding - Love Me Like You Do", filePath: "assets/audio/7.mp3", coverPath: "assets/covers/7.jpg", durationTime: "04.12" },
-    { songName: "Fikar Not - Chhichhore", filePath: "assets/audio/8.mp3", coverPath: "assets/covers/8.jpg", durationTime: "03.09" },
-    { songName: "Ishare Tere - Guru Randhawa", filePath: "assets/audio/9.mp3", coverPath: "assets/covers/9.jpg", durationTime: "03.09" },
-    { songName: "Ishq Mubarak - Tum Bin 2", filePath: "assets/audio/10.mp3", coverPath: "assets/covers/10.jpg", durationTime: "04.56" }
+    { songName: "Kabhi Kabhi Aditi Zindagi", filePath: "assets/audio/1.mp3", coverPath: "assets/covers/5a829af7-f132-4d23-9b12-5bf39af1e7e3.jpg", durationTime: "03.41" },
+    { songName: "Akh Lad Jave - Loveratri", filePath: "assets/audio/2.mp3", coverPath: "assets/covers/Loveyatri-A-Journey-Of-Love-Hindi-2018-20181003-500x500.jpg", durationTime: "03.00" },
+    { songName: "Kar Har Maidaan Fateh - Sanju", filePath: "assets/audio/3.mp3", coverPath: "assets/covers/ab67616d0000b273badc10f3684a57f23c26f6c1.jfif", durationTime: "05.11" },
+    { songName: "Kalank - Kalank (2019)", filePath: "assets/audio/4.mp3", coverPath: "assets/covers/Kalank-Hindi-2019-20200508163312-500x500.jpg", durationTime: "05.11" },
+    { songName: "Qaafirana - Kedarnath (2018)", filePath: "assets/audio/5.mp3", coverPath: "assets/covers/eade0a0b-f7b2-4054-bc98-c54adfb14376_1024.jpg", durationTime: "05.41" },
+    { songName: "Duncan Laurence - Arcade", filePath: "assets/audio/6.mp3", coverPath: "assets/covers/13135748093266339658_mq.jpg", durationTime: "03.05" },
+    { songName: "Ellie Goulding - Love Me Like You Do", filePath: "assets/audio/7.mp3", coverPath: "assets/covers/Ellie_Goulding_-_Love_Me_Like_You_Do.png", durationTime: "04.12" },
+    { songName: "Fikar Not - Chhichhore", filePath: "assets/audio/8.mp3", coverPath: "assets/covers/Fikar-Not-From-Chhichhore--Hindi-2019-20190817075010-500x500.jpg", durationTime: "03.09" },
+    { songName: "Ishare Tere - Guru Randhawa", filePath: "assets/audio/9.mp3", coverPath: "assets/covers/crop_480x480_1532438090_2197636.jpg", durationTime: "03.09" },
+    { songName: "Ishq Mubarak - Tum Bin 2", filePath: "assets/audio/10.mp3", coverPath: "assets/covers/download.jfif", durationTime: "04.56" }
 ];
 
 songItem.forEach((element, i) => {
