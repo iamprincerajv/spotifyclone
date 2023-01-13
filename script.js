@@ -51,19 +51,26 @@ audioElement.addEventListener("timeupdate", () => {
     progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
     myProgressBar.value = progress;
 
+    // test
+    const min = myProgressBar.min
+    const max = myProgressBar.max
+    const val = myProgressBar.value
+
+    myProgressBar.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+
     // time and duration
     let mins = Math.floor(audioElement.duration / 60);
     let secs = Math.floor(audioElement.duration % 60);
-    mins = mins<10 ? '0'+mins : mins;
-    secs = secs<10 ? '0'+secs : secs;
+    mins = mins < 10 ? '0' + mins : mins;
+    secs = secs < 10 ? '0' + secs : secs;
 
     let currMins = Math.floor(audioElement.currentTime / 60);
     let currSecs = Math.floor(audioElement.currentTime % 60);
-    currMins = currMins<10 ? '0'+currMins : currMins;
-    currSecs = currSecs<10 ? '0'+currSecs : currSecs;
+    currMins = currMins < 10 ? '0' + currMins : currMins;
+    currSecs = currSecs < 10 ? '0' + currSecs : currSecs;
 
     document.getElementById('currTime').innerText = currMins + ':' + currSecs;
-    document.getElementById('totDuration').innerText = mins + ":"+ secs;
+    document.getElementById('totDuration').innerText = mins + ":" + secs;
 })
 
 myProgressBar.addEventListener("change", () => {

@@ -143,37 +143,42 @@ nav a {
     /* for chrome */
     -webkit-appearance: none;
     appearance: none;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.6);
+    background-image: linear-gradient(#ff4500, #ff4500);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-                        /***** Track Styles *****/
+/***** Track Styles *****/
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
 #myProgressBar::-webkit-slider-runnable-track {
-    background: red;
-    height: 7px;
-    border-radius: 10px;
-  }
-  
-  /******** Firefox ********/
-  #myProgressBar::-moz-range-track {
-    background: red;
-    height: 7px;
-    border-radius: 10px;
-  }
+    background: transparent;
+    height: 6px;
+}
 
-  /***** Thumb Styles *****/
+/******** Firefox ********/
+#myProgressBar::-moz-range-track {
+    background: transparent;
+    height: 6px;
+    border-radius: 5px;
+}
+
+/***** Thumb Styles *****/
 /***** Chrome, Safari, Opera, and Edge Chromium *****/
 #myProgressBar::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Override default look */
+    -webkit-appearance: none;
+    /* Override default look */
     appearance: none;
-    margin-top: -5px; /* Centers thumb on the track */
+    margin-top: -5px;
+    /* Centers thumb on the track */
     background-color: red;
     height: 17px;
     width: 17px;
-    border-radius: 50%; 
-    border: 0.1px solid orangered;   
- }
+    border-radius: 50%;
+    border: 0.1px solid orangered;
+}
 
 /***** Firefox *****/
 #myProgressBar::-moz-range-thumb {
@@ -188,21 +193,21 @@ nav a {
 /* Removes default focus */
 #myProgressBar:focus {
     outline: none;
-  }
-  
-  /***** Chrome, Safari, Opera, and Edge Chromium *****/
-  #myProgressBar:focus::-webkit-slider-thumb {
+}
+
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+#myProgressBar:focus::-webkit-slider-thumb {
     border: 0.1px solid red;
     outline: 0.8px solid red;
     outline-offset: 0.15rem;
-  }
-  
-  /******** Firefox ********/
-  #myProgressBar:focus::-moz-range-thumb {
+}
+
+/******** Firefox ********/
+#myProgressBar:focus::-moz-range-thumb {
     border: 0.1px solid red;
     outline: 0.8px solid red;
-    outline-offset: 0.15rem;     
-  }
+    outline-offset: 0.15rem;
+}
 
 #currTime {
     position: absolute;
@@ -327,6 +332,7 @@ nav a {
     .songItemContainer {
         margin-top: 20px;
     }
+
     #currTime {
         left: 0vw;
         margin-left: 5px;
@@ -343,7 +349,7 @@ nav a {
         margin-right: 0px;
         margin-left: 5px;
     }
-    
+
     .songItem i {
         margin-right: 15px;
     }
