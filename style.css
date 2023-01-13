@@ -303,11 +303,15 @@ nav a {
         left: 5vw;
         width: 50%;
         min-width: 170px;
-        height: 25px;
         overflow: hidden;
     }
 
     #masterSongName {
+        height: 22px;
+        white-space: nowrap;
+        overflow: visible;
+        text-overflow: clip;
+
         /* animation properties */
         -moz-transform: translateX(100%);
         -webkit-transform: translateX(100%);
