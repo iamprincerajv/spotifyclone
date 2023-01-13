@@ -57,7 +57,7 @@ nav a {
 }
 
 #gif {
-    position: absolute;
+    position: fixed;
     top: 7px;
     width: 50px;
     right: 7px;
